@@ -1,4 +1,4 @@
-A server app that has mock APIs for testing [network_request](#) package using the shelf package. [Shelf](https://pub.dev/packages/shelf)
+A server app that has mock APIs for testing [network_request](https://github.com/ZakaTiwana/network_request) package using the shelf package. [Shelf](https://pub.dev/packages/shelf)
 
 # Running the sample
 
