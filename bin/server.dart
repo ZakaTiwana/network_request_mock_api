@@ -1,3 +1,4 @@
+import 'package:network_request_backend/routes/auth_route.dart';
 import 'package:network_request_backend/routes/user_route.dart';
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart';
@@ -6,6 +7,8 @@ import 'package:shelf_static/shelf_static.dart';
 
 void main(List<String> args) async {
   app.mount(UserRouter.prefix, UserRouter.instance.router);
+  app.mount(AuthRouter.prefix, AuthRouter.instance.router);
+
   final cascade = Cascade()
       // First, serve files from the 'public' directory
       .add(_staticHandler)
